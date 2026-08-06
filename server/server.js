@@ -11,11 +11,12 @@ import mongoose from "mongoose"
 import cookieParser from "cookie-parser"
 import cors from 'cors'
 import authRouter from './routes/auth/auth-routes.js'
+import 'dotenv/config';
 //create a database connection -> u can also 
 //create a serparte file for this and them import/use that file
 import adminProductRouter from './routes/admin/products-routes.js';
 
-mongoose.connect('mongodb+srv://ratulc180_db_user:svkzUh7TRljoMzxj@cluster0.aqjo5x4.mongodb.net/')
+mongoose.connect(process.env.MONGODB_URI)
 .then(()=> console.log("MongoDB connected"))
 .catch((error)=>{
     console.log(error);
