@@ -1,8 +1,3 @@
-// ratulc180_db_user
-// svkzUh7TRljoMzxj
-// mongodb+srv://ratulc180_db_user:svkzUh7TRljoMzxj@cluster0.aqjo5x4.mongodb.net/
-
-
 
 //create a express server by creating a app
 
