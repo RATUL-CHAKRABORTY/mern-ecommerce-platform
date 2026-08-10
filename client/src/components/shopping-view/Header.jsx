@@ -1,4 +1,4 @@
-
+import { useSelector } from "react-redux";
 function ShoppingHeader() {
   const { isAuthenticated } = useSelector((state) => state.auth);
 
