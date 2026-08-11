@@ -1,4 +1,22 @@
+import { HousePlug, Menu } from "lucide-react";
+import {
+  Link,
+  
+} from "react-router-dom";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { Button } from "../ui/button";
+import { useDispatch, useSelector } from "react-redux";
 
+
+
+import { Label } from "../ui/label";
+
+function MenuItems() {
+  return <></>
+}
+function HeaderRightContent(){
+  return <></>
+}
 function ShoppingHeader() {
   const { isAuthenticated } = useSelector((state) => state.auth);
 
