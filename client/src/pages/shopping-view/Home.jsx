@@ -424,10 +424,3 @@ export default ShoppingHome
 
 
 
-
-
-
-  
-
-
-export default Home;
