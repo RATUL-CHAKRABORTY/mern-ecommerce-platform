@@ -13,5 +13,4 @@ function ShoppingLayout() {
     </div>
   )
 }
-
-export default ShoppingLayout
+export default ShoppingLayout;

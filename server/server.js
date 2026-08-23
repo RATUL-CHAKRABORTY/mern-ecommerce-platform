@@ -10,6 +10,7 @@ import 'dotenv/config';
 //create a database connection -> u can also 
 //create a serparte file for this and them import/use that file
 import adminProductRouter from './routes/admin/products-routes.js';
+import shopProductsRouter from  "./routes/shop/products-routes.js"
 
 mongoose.connect(process.env.MONGODB_URI)
 .then(()=> console.log("MongoDB connected"))
@@ -40,4 +41,5 @@ app.use(cookieParser());
 app.use(express.json());
 app.use('/api/auth',authRouter);
 app.use("/api/admin/products",adminProductRouter);
+app.use("/api/shop/products",shopProductsRouter)
 app.listen(PORT , ()=> console.log(`Server is now running on port ${PORT}`));
